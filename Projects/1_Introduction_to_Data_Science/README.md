@@ -10,7 +10,7 @@
 
 There should be no necessary libraries to run the code here beyond the Anaconda distribution of Python.  The code should run with no issues using Python versions 3.*.
 
-The Stack Overflow Annual Developer Survey 2018 data set is available at https://insights.stackoverflow.com/survey.
+The Stack Overflow Annual Developer Survey 2018 data set is available at [here](https://insights.stackoverflow.com/survey).
 
 ## Project Motivation<a name="motivation"></a>
 
