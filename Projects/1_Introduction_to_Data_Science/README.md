@@ -26,4 +26,4 @@ The main findings of the code can be found at the post available [here](https://
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
-The data I used in this analysis was provided by Stack Overflow: https://insights.stackoverflow.com/survey
+The data I used in this analysis was provided by Stack Overflow: Available [here](https://insights.stackoverflow.com/survey).
