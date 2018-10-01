@@ -1,10 +1,13 @@
 import sys
-# GIT test
-
+import pandas as pd
+import sqlalchemy
 
 def load_data(database_filepath):
-    pass
-
+    engine = sqlalchemy.create_engine('sqlite:///'+database_filepath)
+    df = pd.read_sql_table('CleanMessages', engine)
+    X = df.message
+    Y = df.loc[:,'related':'direct_report']
+    return X, Y, Y.columns
 
 def tokenize(text):
     pass
