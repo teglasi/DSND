@@ -1,23 +1,53 @@
+# import libraries
 import sys
+import nltk
+nltk.download(['punkt', 'wordnet'])
 import pandas as pd
+import numpy as np
 import sqlalchemy
+from nltk.tokenize import word_tokenize
+from nltk.stem import WordNetLemmatizer
+from sklearn.pipeline import Pipeline, FeatureUnion
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.multioutput import MultiOutputClassifier
+from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
+from sklearn.metrics import classification_report
+from sklearn.model_selection import GridSearchCV
 
 def load_data(database_filepath):
     engine = sqlalchemy.create_engine('sqlite:///'+database_filepath)
     df = pd.read_sql_table('CleanMessages', engine)
-    X = df.message
-    Y = df.loc[:,'related':'direct_report']
-    return X, Y, Y.columns
+    df.drop(['original', 'genre'], axis=1, inplace=True)
+    df.dropna(inplace=True)
+    keep_labels = ['0', '1']
+    df = df[df['related'].isin(keep_labels)]
+    X = df.message.values
+    Y = df.loc[:, 'related':'direct_report'].values
+    return X, Y, df.loc[:, 'related':'direct_report'].columns
 
 def tokenize(text):
-    pass
-
+    tokens = word_tokenize(text)
+    lemmatizer = WordNetLemmatizer()
+    clean_tokens = []
+    for tok in tokens:
+        clean_tok = lemmatizer.lemmatize(tok).lower().strip()
+        clean_tokens.append(clean_tok)
+    return clean_tokens
 
 def build_model():
-    pass
-
+    pipeline = Pipeline([
+        ('features', FeatureUnion([
+            ('text_pipeline', Pipeline([
+                ('vect', CountVectorizer(tokenizer=tokenize)),
+                ('tfidf', TfidfTransformer())
+            ]))
+        ])),
+        ('clf', MultiOutputClassifier(RandomForestClassifier()))
+    ])
 
 def evaluate_model(model, X_test, Y_test, category_names):
+
     pass
 
 
