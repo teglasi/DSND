@@ -1,7 +1,7 @@
 
 ### Table of Contents
 
-1. [Installation](#installation)
+1. [Project Summary](#installation)
 2. [Project Motivation](#motivation)
 3. [File Descriptions](#files)
 
