@@ -45,7 +45,7 @@ def clean_data(df):
 
 def save_data(df, database_filename):
     """
-    Save data set to a file.
+    Save the clean dataset into an sqlite database.
 
     :param df: The data frame to save.
     :param database_filename: Destination file name.
