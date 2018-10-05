@@ -18,7 +18,7 @@ The
 ## File Descriptions<a name="files"></a>
 
 The file structure:
-
+```
 - app
 | - template
 | |- master.html  # main page of web app
@@ -36,8 +36,8 @@ The file structure:
 |- classifier.pkl  # saved model 
 
 - README.md
-
+```
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
-The data I used in this analysis was provided by Stack Overflow: Available [here](https://insights.stackoverflow.com/survey).
+The data, used in this analysis, was provided by Figure Eight: Available [here](https://www.figure-eight.com/).
