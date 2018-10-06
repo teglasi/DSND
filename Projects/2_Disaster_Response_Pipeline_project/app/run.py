@@ -11,10 +11,12 @@ from plotly.graph_objs import Bar
 from sklearn.externals import joblib
 from sqlalchemy import create_engine
 
+import re
 
 app = Flask(__name__)
 
 def tokenize(text):
+    text = re.sub(r"[^a-zA-Z0-9]", " ", text)
     tokens = word_tokenize(text)
     lemmatizer = WordNetLemmatizer()
 
