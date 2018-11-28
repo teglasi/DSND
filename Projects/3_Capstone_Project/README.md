@@ -8,9 +8,8 @@
 
 ## Project Overview<a name="overview"></a>
 
-Disasters are followed by millions of communications in either direct or indirect ways.
-Disaster response organizations must filter the messages based on their importance and relevancy and dispatch them to the apripriate body.
-This project provides a data pipeline to prepare messages, a machine learning pipeline to categorize messages and a web-based application to classify new messages.
+This project provides a data analyzis on demographics data for customers of a mail-order sales company in Germany, comparing it against demographics information for the general population.
+Based on this demographics information, a model is built to identify potential future customers from a third dataset.
  
 ## Project Statement<a name="statement"></a>
 
