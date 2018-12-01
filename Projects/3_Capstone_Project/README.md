@@ -19,7 +19,7 @@ Part 1: Customer Segmentation Report
 
 Part 2: Supervised Learning Model
 
-Part 3: 
+Part 3: Kaggle Competition
 
 
 ## File Descriptions<a name="files"></a>
