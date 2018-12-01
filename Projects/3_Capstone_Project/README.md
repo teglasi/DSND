@@ -14,11 +14,12 @@ Based on this demographics information, a model is built to identify potential f
 ## Project Statement<a name="statement"></a>
 
 The project consists of three parts:
-Part 1:
 
-Part 2:
+Part 1: Customer Segmentation Report
 
-Part 3:
+Part 2: Supervised Learning Model
+
+Part 3: 
 
 
 ## File Descriptions<a name="files"></a>
