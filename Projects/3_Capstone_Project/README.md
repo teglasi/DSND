@@ -23,7 +23,7 @@ Using unsupervised learning techniques, I describe the relationship between the 
 
 Based on the results of Part 1, I build a prediction model to decide, whether an individual of the general population is likely to become a customer of the mail-order company.
 
-Part 3: Kaggle Competition
+**Part 3: Kaggle Competition**
 
 
 ## File Descriptions<a name="files"></a>
