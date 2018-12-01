@@ -15,7 +15,8 @@ Based on this demographics information, a model is built to identify potential f
 
 The project consists of three parts:
 
-Part 1: Customer Segmentation Report
+**Part 1: Customer Segmentation Report**
+
 Using unsupervised learning techniques, I describe the relationship between the demographics of the company's existing customers and the general population of Germany. 
 
 Part 2: Supervised Learning Model
