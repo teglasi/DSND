@@ -68,6 +68,26 @@ def create_cat_codes(df1, df2):
     df2 = combined.iloc[df1.shape[0]:, :]
     return df1, df2
 
+def create_dummies (df1, df2, col):
+
+    """Create dummy variables on the combined dataframes based on the specified columns.
+
+    Parameters
+    ----------
+    df1, df2 : pandas.DataFrames
+    col : list, columns to perform get_dummies on
+
+    Output
+    ------
+    Two original dataframes extended with dummy variables.
+    """
+
+    combined = pd.concat([df1, df2])
+    combined = pd.get_dummies(combined, columns=col)
+    df1 = combined.iloc[:df1.shape[0], :]
+    df2 = combined.iloc[df1.shape[0]:, :]
+    return df1, df2
+
 def feat_relevance(df):
 
     """Create integer category codes for two dataframes based on label sets combined from both dataframes.
