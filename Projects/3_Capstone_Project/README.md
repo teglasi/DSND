@@ -8,7 +8,7 @@
 
 ## Project Overview<a name="overview"></a>
 
-This project provides a data analyzis on demographics data for customers of a mail-order sales company in Germany, comparing it against demographics information for the general population.
+This project provides a data analysis on demographics data for customers of a mail-order sales company in Germany, comparing it against demographics information for the general population.
 Based on this demographics information, a model is built to identify potential future customers from a third dataset.
  
 ## Project Statement<a name="statement"></a>
