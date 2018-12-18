@@ -25,6 +25,7 @@ Based on the results of Part 1, I build a prediction model to decide, whether an
 
 **Part 3: Kaggle Competition**
 
+In the last part, the supervised model is measured in a Kagle competition. The task is to predict future customers on a fourth data set.
 
 ## File Descriptions<a name="files"></a>
 
