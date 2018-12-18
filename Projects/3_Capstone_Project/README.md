@@ -25,7 +25,7 @@ Based on the results of Part 1, I build a prediction model to decide, whether an
 
 **Part 3: Kaggle Competition**
 
-In the last part, the supervised model is measured in a Kagle competition. The task is to predict future customers on a fourth data set.
+In the last part, the supervised model is used to make predictions on the campaign data as part of a Kaggle Competition.
 
 ## File Descriptions<a name="files"></a>
 
@@ -41,7 +41,7 @@ There are four data files, an IPython Notebook and a helper library associated w
 
 ## Results of the Analysis<a name="results"></a>
 
-
+The result of the analysis is described in the post available [here](https://medium.com).
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
