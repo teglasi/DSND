@@ -17,7 +17,7 @@ The project consists of three parts:
 
 **Part 1: Customer Segmentation Report**
 
-Using unsupervised learning techniques, I describe the relationship between the demographics of the company's existing customers and the general population of Germany. 
+Using unsupervised learning techniques, I describe the relationship between the demographics of the company's existing customers and the general population of Germany. PCA is applied for dimensionality reduction and Kmeans for clustering. We expect to see the main differences between customers and general population by comparing the most and least represented clusters between the data sets.
 
 **Part 2: Supervised Learning Model**
 
